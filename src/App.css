@@ -1,0 +1,256 @@
+/* Colors */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --background-color: #F5F5F5;
+    --text-color: #333333;
+    --accent-color: #FFC107;
+  }
+  
+  /* Body */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 40px;
+    color: #5E60CE;
+    text-align: center;
+    margin-top: 20px; /* adjust this value to change the distance from the top */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3); /* add a shadow effect */
+    letter-spacing: 2px; /* increase the space between letters */
+    font-weight: bold; /* make the text bolder */
+  }
+  
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  /* Forms */
+  input[type="text"] {
+    border: none;
+    border-bottom: 2px solid var(--accent-color);
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  /* Lists */
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Links */
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .formDiv {
+    background-color: #E2E6FF;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .formDiv h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #222222;
+    margin-bottom: 20px;
+  }
+  
+  .formDiv input[type="text"],
+  .formDiv input[type="email"],
+  .formDiv input[type="password"] {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #444444;
+  }
+  
+  .formDiv textarea {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #444444;
+    resize: vertical;
+    vertical-align: middle;
+  }
+  
+  .formDiv button {
+    background-color: #5E60CE;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .formDiv button:hover {
+    background-color: #4647A1;
+  }
+  
+  .formDiv p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #666666;
+    margin-top: 20px;
+  }
+  
+  .log {
+    display: inline-block;
+    background-color: #5E60CE;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .log:hover {
+    background-color: #4647A1;
+  }
+  
+  .Navv {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+  }
+  
+  .taskListComponent {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* padding: 20px; */
+    max-width: 25%;
+    /* right: 5px; */
+    /* margin: 0 auto; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+    float: left;
+    margin-left: 1%;
+
+    position: fixed;
+    top: 20%;
+    left: 1%;
+    z-index: 9999;
+  }
+  
+  .taskListComponent h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    background-color: #4647A1;
+    border-radius: 0px 0px 0px 0px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .taskListComponent ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .taskListComponent li {
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    /* margin-top: 25px;
+    margin-bottom: 25px; */
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    /* background-color: #5E60CE; */
+    /* text-align: center;     */
+  }
+  .taskListComponent button:hover {
+    /* margin-bottom: 10px; */
+    background-color: #3c3e8b;
+    color: #FFFFFF;
+    border-radius: 10px;
+  }
+
+  .box {
+    position: fixed;
+    top: 20%;
+    right: 1%;
+    z-index: 9999;
+
+    width: 30%;
+    margin-left: 1%;
+    margin-right: 1%;
+    float: right;
+  }
+  
+  #taskDesc {
+    float: left;
+    width: 37%;
+
+    position: fixed;
+    top: 20%;
+    left: 26%;
+    z-index: 9999;
+  }
+
+  #taskEdit {
+    float: left;
+    width: 37%;
+    height: 48%;
+
+    position: fixed;
+    top: 20%;
+    left: 26%;
+    z-index: 9999;
+    align-items: center;
+  }
